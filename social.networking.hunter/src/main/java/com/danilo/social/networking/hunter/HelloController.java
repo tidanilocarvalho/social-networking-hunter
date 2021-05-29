@@ -7,11 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController
 {
-
     @GetMapping (path = "/hello")
-    public ResponseEntity<String> hi()
+    public ResponseEntity<String> sayHi()
     {
         return ResponseEntity.ok().body("hi");
     }
 
+    @GetMapping (path = "/error")
+    public ResponseEntity<String> throwError()
+    {
+        throw new RuntimeException("Unknow Error");
+    }
 }
