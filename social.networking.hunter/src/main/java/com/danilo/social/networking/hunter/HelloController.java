@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController
 {
-    @Autowired private ApplicationAvailability applicationAvailability;
+    @Autowired 
+    private ApplicationAvailability applicationAvailability;
 
-    
     @GetMapping (path = "/hello")
     public ResponseEntity<String> sayHi()
     {
@@ -22,5 +22,11 @@ public class HelloController
     public ResponseEntity<String> throwError()
     {
         throw new RuntimeException("Unknow Error");
+    }
+    
+    @GetMapping (path = "/availability")
+    public ResponseEntity<ApplicationAvailability> getApplicationAvailability()
+    {
+        return ResponseEntity.ok().body(applicationAvailability);
     }
 }
