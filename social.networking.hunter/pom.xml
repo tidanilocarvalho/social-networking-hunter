@@ -15,7 +15,7 @@
 	<groupId>com.danilo</groupId>
 	<artifactId>social.networking.hunter</artifactId>
 	<version>1.0.0</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>social.networking.hunter</name>
 	<description>Danilo Carvalho</description>
