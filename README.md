@@ -18,3 +18,9 @@ social-networking-hunter
 # New Versions
 * docker tag <IMAGE ID> tidanilocarvalho/social-networking-hunter:<TAG ID>
 * docker push tidanilocarvalho/social-networking-hunter:<TAG ID>
+
+# Status
+* http://localhost:9090/social-networking-hunter/actuator
+* http://localhost:9090/social-networking-hunter/actuator/health
+* http://localhost:9090/social-networking-hunter/actuator/health/liveness
+* http://localhost:9090/social-networking-hunter/actuator/health/readiness
